@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SML BAR AND RESTAURANT</title>
+    <style>
+        #logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; 
+            overflow: hidden;
+        }
+
+        .logo-container {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #bar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(59, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #featured-items {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+            background-color: #ffffff;
+        }
+
+        #featured-items img {
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        .menu-category img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        #about-us,
+        #menu-categories {
+            text-align: center;
+            padding: 2em;
+            background-color: #f4f4f4;
+            margin: 1em 0;
+        }
+
+        #menu-categories h2 {
+            color: #333;
+        }
+
+        .category {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 2em;
+            background-color: rgb(59, 0, 0);
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1em;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #111;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://t3.ftcdn.net/jpg/04/77/92/34/240_F_477923445_Yt7JA3U5z3eZRFmdUiGtARdLLLKAhGhd.jpg" alt="SML BAR" id="bar">
+        </div>
+        <div id="restaurant-name">
+            <h1>SML BAR AND RESTAURNT</h1>
+            <p>Your Ultimate DRUGS AND FOOD Destination</p>
+        </div>
+        <p style="font-size: smaller;">Contact: 9898005956, Email: smlbar344@gamil.com, 777 Main Street, India</p>
+    </header>
+    
+
+    <section id="featured-items">
+        <img src="https://starbarcafeandhotel.com.au/wp-content/uploads/2021/03/bar-2.jpg" alt="Featured Item 1">
+        <img src="https://images2.alphacoders.com/109/1093754.jpg" alt="Featured Item 2">
+        <img src="https://cdn.shopify.com/s/files/1/1216/2612/files/Untitled_design_1_fbc33539-fcb5-4926-bc2a-1aa3de1d6b03.jpg?v=1606036098" alt="Featured Item 3">
+        <img src="https://sunstateliquor.com.au/wp-content/uploads/2017/11/SSLW_Product_Image_VODKA-copy.jpg" alt="Featured Item 4">
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>At SML BAR AND RESTAURNT, we are passionate about serving high-quality and delicious drugs and food. Our chefs use only the freshest ingredients to create mouthwatering dishes that will leave you craving for more.</p>
+    </section>
+
+    <section id="menu-categories">
+        <h2>Menu Categories</h2>
+
+        <!-- Veg Section -->
+        <div class="category" id="veg">
+            <h3>Veg Delights</h3>
+            <div class="menu-item menu-category">
+                <img src="https://www.liveeatlearn.com/wp-content/uploads/2021/01/buddhas-delight-2.jpg" alt="Veg Pasta">
+                <p>Veg Pasta - 149 Rs/- </p>
+            </div>
+            <div class="menu-item menu-category">
+                <img src="https://www.wearesovegan.com/wp-content/uploads/2021/11/sovegansweetpotatocrustveganpizzarecipeh2-600x844.jpg" alt="Veg Pizza">
+                <p>Veg Pizza - 99 Rs/- </p>
+            </div>
+            <!-- Add more veg items as needed -->
+        </div>
+
+        <!-- Non-Veg Section -->
+        <div class="category" id="nonVeg">
+            <h3>Non-Veg Feast</h3>
+            <div class="menu-item menu-category">
+                <img src="https://i1.wp.com/swatisani.net/kitchen/wp-content/uploads/2015/10/IMG_9526.jpg?fit=942,628&ssl=1" alt="Chicken Biryani">
+                <p>Chicken Biryani - 199 Rs/- </p>
+                
+            </div>
+            <div class="menu-item menu-category">
+                <img src="https://www.cookingclassy.com/wp-content/uploads/2018/05/grilled-lemon-herb-salmon-7.jpg" alt="Grilled Salmon">
+                <p>Grilled Salmon - 222 Rs/- </p>
+            </div>
+            <!-- Add more non-veg items as needed -->
+        </div>
+
+        <!-- Soft Drinks Section -->
+        <div class="category" id="softDrinks">
+            <h3>Refreshing Drinks</h3>
+            <div class="menu-item menu-category">
+                <img src="https://i5.walmartimages.com/asr/7406b9e8-0d25-47bd-9c9e-003fd6aa64a6_1.5237a8a66b8d28cf31efd17c50f63735.jpeg" alt="Coke">
+                <p>Coke - 45 Rs/- </p>
+            </div>
+            <div class="menu-item menu-category">
+                <img src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d79bc090-0c98-4f0a-861e-5b8bae951107.png" alt="Sprite">
+                <p>Sprite - 45 Rs/- </p>
+            </div>
+            <!-- Add more soft drinks as needed -->
+        </div>
+        <div class="category" id="mocktails">
+            <h3>Delicious Mocktails</h3>
+            <div class="menu-item menu-category">
+                <img src="https://2.bp.blogspot.com/-_5vFdLaFlOs/U8-xUgt_vAI/AAAAAAAAIyc/iC_cZ0yckM8/s1600/1387743666_1357968852_cool_mocktail_glasses.jpg" alt="Mocktail 1">
+                <p>Sparkling Citrus - 79 Rs/- </p>
+            </div>
+            <div class="menu-item menu-category">
+                <img src="https://i.pinimg.com/736x/32/77/8f/32778f2adfe3048d4922858744818d88.jpg" alt="Mocktail 1">
+                <p>Sparkling Citrus - 79 Rs/- </p>
+            </div>
+            <!-- Add more mocktails as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to place an order? Reach out to us!</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2024 SML BAR AND RESTAURANT. All rights reserved.
+    </footer>
+
+</body>
+</html>
